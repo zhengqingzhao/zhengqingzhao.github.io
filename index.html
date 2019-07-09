@@ -1,53 +1,132 @@
 <html>
-  <head>
-    <style> body{
-      margin-left:30%;
-      padding:10px 10px 10px 10px;
-      background-color: #b5a789;
-  
-   font-family:serif;
-      }
- #title{
-        text-align:center;
-        }
-#zhengti{
-  background-color:#675c47;
-  position:absolute;
-  width:800px;
-  margin-left:auto;
-  margin-right:auto;
-}
-#tribute-info{
-  margin-left:20px;
+<head>
+  <title>个人作品集</title>
+  <style>
+  body{
+    display:flex;
+    flex-direction:column;
+    padding:0px;
+    margin:0px;
 
 }
-#liebiao{
-  margin:0px 0px 0px 0px;
+ul{
+  list-style-type:none;
+  text-align:right;
 }
-#zysy{
-  background-color: #efe5d0;
-}</style>
-    <title>我的偶像科比布莱恩特</title>
-   <body>
-     <div id="zhengti">
-     <h1 id="title" >科比布莱恩特</h1> 
-     <figure id="img-div">
-       <h2 >这个男人我追了13年</h2>
-     <img id="image"src="http://baike.kaiwind.com/jplb/201606/21/W020160621283873389663.jpg" height="400" width="700" text-align:center>
-     <p id="img-caption">科比在2010年总决赛对阵凯尔特人一打三</p>
-     </figure>
-       <div id="zysy">
-     <h3 id="tribute-info">这是科比的重要时间点</h2>
-     <ul id="liebiao">
-       <li><strong>1978</strong>-<em>出生在美国宾夕法尼亚费城</em></li>
-       <li><strong>1996</strong>-<em>在NBA选秀中于第一轮第13顺位被黄蜂队选中</em></li>
-       <li><strong>2000</strong>-<em>拿下个人第一个总冠军</em></li>
-       <li><strong>2008</strong>-<em>拿下个人第一常规赛MVP</em></li>
-       <li><strong>2016</strong>-<em>正式宣布退役</em></li>
-     </ul>
-     <blockquote>科比的伟大不仅仅体现在得分这一点，他在81分的夜晚投了那么多球，可看上去还能打一场比赛<br>—斯科特</blockquote>
-       </div>
-     <h2>如果你有时间，你应该在他的<a target="_blank" id="tribute-info" href="https://baike.baidu.com/item/%E7%A7%91%E6%AF%94%C2%B7%E5%B8%83%E8%8E%B1%E6%81%A9%E7%89%B9/318773?fromtitle=%E7%A7%91%E6%AF%94&fromid=133066&fr=aladdin">百度百科条目</a>上阅读更多有关这个难以置信的人信息</h2>
-     </div>
-    </body>
-  </html>
+ul li{
+  display:inline;
+  margin:100px 30px 100px 30px;
+  font-size:20px;
+  color:white;
+  
+}
+#navbar{
+  background-color:#750000;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+}
+#welcome-section{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+  width:100%;
+  height:500px;
+  color:white;
+ 
+}
+#welcome-section h1{
+  font-family:'Raleway', sans-serif;
+  font-size:35px;
+  margin:10px;
+}
+#welcome-section h2{
+  font-family: 'Raleway', sans-serif;
+  color:#ce0000;
+  margin:0px;
+  font-style:italic;
+}
+#projects{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:	#4169E1;
+  width:100%;
+  flex-wrap:wrap;
+  height:800px;
+  color:white;
+}
+#tupian1{
+ 
+  height:200px;
+}
+#projects p{
+  background-color:#4f4f4f;
+  margin-top:0px;
+  text-align:center;
+  padding:10px 0px;
+}
+a{
+  display:flex;
+  flex-direction:column;
+  width:20%;
+  margin:50px;
+}
+#projects h1{
+  font-size:40px;
+  display:flex;
+  flex-direction:column;
+  text-decoration:underline;
+  width:100%;
+  text-align:center;
+}
+
+
+
+  </style>
+</head>  
+<body>
+<nav id="navbar">
+  <ul>
+    <li>About</li>
+    <li>Work</li>
+    <li>Contact</li>
+  </ul>  
+</nav>
+<section id="welcome-section">
+  <h1>Hey I am Zhaozhengqing</h1>
+  <h2>a web developer</h2>
+</section>
+<section id="projects">
+  <h1>These are some of my projects</h1>
+  <a target="_blank" href="https://codepen.io/zhengqingzhao/full/NZOQJa">
+  <img id="tupian1" src="http://m.qpic.cn/psb?/V14f9oOq2LbAG8/veW1W.8XfsK*dTGG6XA8hU2p2535go0X73BD933uKpg!/b/dL4AAAAAAAAA&bo=WwcWAwAAAAADB2s!&rf=viewer_4">
+  <p>个人作品集</p>
+  </a>
+  <a target="_blank" href="https://codepen.io/zhengqingzhao/full/vqVpjN">
+  <img id="tupian1" src="http://m.qpic.cn/psb?/V14f9oOq2LbAG8/ye6305n.M9vztDtnSrDeDoucDPHiCnjevB.qS.ZO5hQ!/b/dFMBAAAAAAAA&bo=aAd6AwAAAAADBzQ!&rf=viewer_4">
+  <p>技术文档</p>
+  </a>
+   <a target="_blank" href="https://codepen.io/zhengqingzhao/full/vqVpjN">
+  <img id="tupian1" src="http://m.qpic.cn/psb?/V14f9oOq2LbAG8/BWZlf6SlmPla63n2MHYWnbROKQMe2MxTFvemeiF0q4I!/b/dL8AAAAAAAAA&bo=NAU7AgAAAAADFzo!&rf=viewer_4">
+  <p>登录界面</p>
+  </a>
+   <a target="_blank" href="https://codepen.io/zhengqingzhao/full/ZdjPLJ">
+  <img id="tupian1" src="http://m.qpic.cn/psb?/V14f9oOq2LbAG8/as37Y6jVSXJJ5ti3kNsEpui6Unna2nNxRxCt9eLiVF8!/b/dFQBAAAAAAAA&bo=uwKBAgAAAAADFwg!&rf=viewer_4">
+  <p>调查表格1</p>
+  </a>
+   <a target="_blank" href="https://codepen.io/zhengqingzhao/full/zVjyOO">
+  <img id="tupian1" src="http://m.qpic.cn/psb?/V14f9oOq2LbAG8/.0dMUrmXthPMz4SMVqx60BXjCn2xka*Vha.ybzPYIII!/b/dLgAAAAAAAAA&bo=3wINAwAAAAADF.E!&rf=viewer_4">
+  <p>调查表格2</p>
+  </a>
+   <a target="_blank" href="https://codepen.io/zhengqingzhao/full/YoebVm">
+  <img id="tupian1" src="http://m.qpic.cn/psb?/V14f9oOq2LbAG8/asAgqoIJSiT4PHLedN88VFwqkHH10OZ6Gg1VuDDqpMk!/b/dL8AAAAAAAAA&bo=NQNvAwAAAAADRzg!&rf=viewer_4">
+  <p>致敬偶像</p>
+  </a>
+</section>
+  
+</body>
+</html>
